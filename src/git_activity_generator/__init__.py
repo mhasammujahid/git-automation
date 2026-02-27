@@ -1,0 +1,1 @@
+"""Git activity generator package."""
