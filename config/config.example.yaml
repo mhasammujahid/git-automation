@@ -1,0 +1,59 @@
+repo_path: /path/to/target/repo
+default_branch: main
+timezone: UTC
+daily_min_commits: 1
+daily_max_commits: 12
+max_commits_per_day: 15
+gaussian_distribution: true
+weekend_multiplier: 0.35
+working_hours_start: 9
+working_hours_end: 20
+dry_run: true
+verbose: true
+deterministic_seed: null
+
+vacation_ranges:
+  - start: "2026-12-24"
+    end: "2027-01-02"
+
+seasonal:
+  monthly_multiplier:
+    1: 0.9
+    2: 0.9
+    3: 1.1
+    4: 1.15
+    5: 1.2
+    6: 1.05
+    7: 0.8
+    8: 0.85
+    9: 1.0
+    10: 1.1
+    11: 1.2
+    12: 0.95
+
+branching:
+  enabled: true
+  feature_branch_probability: 0.28
+  hotfix_branch_probability: 0.07
+  squash_merge_probability: 0.45
+
+messages:
+  conventional_commits: true
+  emoji: false
+  tone: startup
+  typo_probability: 0.05
+  markov_enabled: true
+  ai_templates_enabled: true
+
+realism:
+  streak_burst_probability: 0.2
+  late_night_probability: 0.12
+  pre_weekend_spike_probability: 0.2
+  large_refactor_probability: 0.08
+  cooldown_day_probability: 0.06
+
+authors:
+  - name: Alex Rivera
+    email: alex.rivera@example.com
+  - name: Morgan Lee
+    email: morgan.lee@example.com

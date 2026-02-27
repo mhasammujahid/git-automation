@@ -1,0 +1,38 @@
+{
+  "repo_path": "/workspace/git-automation",
+  "default_branch": "main",
+  "timezone": "UTC",
+  "daily_min_commits": 1,
+  "daily_max_commits": 3,
+  "max_commits_per_day": 5,
+  "gaussian_distribution": true,
+  "weekend_multiplier": 0.4,
+  "working_hours_start": 9,
+  "working_hours_end": 18,
+  "dry_run": true,
+  "verbose": true,
+  "deterministic_seed": 42,
+  "seasonal": {"monthly_multiplier": {"2": 1.0}},
+  "branching": {
+    "enabled": true,
+    "feature_branch_probability": 0.2,
+    "hotfix_branch_probability": 0.05,
+    "squash_merge_probability": 0.5
+  },
+  "messages": {
+    "conventional_commits": true,
+    "emoji": false,
+    "tone": "startup",
+    "typo_probability": 0.02,
+    "markov_enabled": true,
+    "ai_templates_enabled": true
+  },
+  "realism": {
+    "streak_burst_probability": 0.15,
+    "late_night_probability": 0.1,
+    "pre_weekend_spike_probability": 0.15,
+    "large_refactor_probability": 0.08,
+    "cooldown_day_probability": 0.03
+  },
+  "authors": [{"name": "Dev Bot", "email": "dev.bot@example.com"}]
+}
